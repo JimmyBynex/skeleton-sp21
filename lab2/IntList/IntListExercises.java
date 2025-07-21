@@ -9,6 +9,9 @@ public class IntListExercises {
      * @param lst IntList from Lecture
      */
     public static void addConstant(IntList lst, int c) {
+        if(lst== null){
+            return;
+        }
         IntList head = lst;
         while (head.rest != null) {
             head.first += c;
@@ -25,6 +28,9 @@ public class IntListExercises {
      * @param L IntList from Lecture
      */
     public static void setToZeroIfMaxFEL(IntList L) {
+        if(L==null) {
+            return;
+        }
         IntList p = L;
         while (p != null) {
             if (firstDigitEqualsLastDigit(max(p))) {
