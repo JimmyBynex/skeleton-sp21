@@ -9,7 +9,7 @@ public class IntListExercises {
      * @param lst IntList from Lecture
      */
     public static void addConstant(IntList lst, int c) {
-        if(lst== null){
+        if(lst == null){
             return;
         }
         IntList head = lst;
@@ -21,16 +21,13 @@ public class IntListExercises {
     }
 
     /**
-     * Part B: Buggy method that sets node.first to zero if
+     * Part B: Buggy method that sets node.First to zero if
      * the max value in the list starting at node has the same
      * first and last digit, for every node in L
      *
      * @param L IntList from Lecture
      */
     public static void setToZeroIfMaxFEL(IntList L) {
-        if(L==null) {
-            return;
-        }
         IntList p = L;
         while (p != null) {
             if (firstDigitEqualsLastDigit(max(p))) {
