@@ -107,6 +107,7 @@ public class TestAtLeastOneMoveExists {
                 {4, 2, 4, 2},
                 {2, 4, 2, 4},
                 {4, 2, 4, 2},
+
         };
 
         b = new Board(rawVals, 0);
